@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var valor=["","",""]
+        valor[0] = prompt('ingresar un número','');
+        valor[1] = prompt('ingresar otro número', '');
+        valor[2] = prompt('ingresar último número', '');
+
+        valor[0] = parseInt(valor[0]);
+        valor[1] = parseInt(valor[1]);
+        valor[2] = parseInt(valor[2]);
+
+        if (valor[0] > valor[1] && valor[0] > valor[2]) {
+            document.write('el número más grande es ' + valor[0])
+        } 
+        else if (valor[1] > valor[2]) {
+            document.write('el número más grande es ' + valor[1])
+        }
+        else {
+            document.write('el número más grande es ' + valor[2])
+        }
+         
+    </script>
+    
+</body>
+</html>

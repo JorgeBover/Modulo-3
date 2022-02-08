@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var distancia;
+        distancia = prompt('ingrese la distancia a recorrer', '');
+
+        if (parseInt(distancia) <= 1000) {
+            document.write('debe ir a pié');
+        }
+        else if (parseInt(distancia) <= 10000) {
+            document.write('debe ir en bicicleta');
+        }
+        else if (parseInt(distancia) <= 30000) {
+            document.write('debe ir en colectivo');
+        }
+        else if (parseInt(distancia) <= 100000) {
+            document.write('debe ir en auto');
+        }
+        else if (parseInt(distancia) > 100000) {
+            document.write('debe ir en avión');
+        }
+        else {
+            document.write('no es un valor válido')
+        }
+
+
+    </script>
+</body>
+
+</html>
