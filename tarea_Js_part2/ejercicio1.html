@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+
+<body id="fondo">
+    <div id="rojo">
+    </div>
+
+    <div id="verde">
+    </div>
+
+    <div id="azul">
+    </div>
+
+    <script>
+        var colorFondo = document.getElementById('fondo');
+        var rojo = document.getElementById('rojo');
+        var verde = document.getElementById('verde');
+        var azul = document.getElementById('azul');
+
+      
+        rojo.addEventListener('click', function () {
+            if (colorFondo.style.backgroundColor == 'red') {
+                colorFondo.style.backgroundColor = '';
+            } else {
+                colorFondo.style.backgroundColor = 'red';
+            };
+        });
+
+        verde.addEventListener('click', function () {
+            if (colorFondo.style.backgroundColor == 'green') {
+                colorFondo.style.backgroundColor = '';
+            } else {
+                colorFondo.style.backgroundColor = 'green';
+            };
+        });
+
+        azul.addEventListener('click', function () {
+            if (colorFondo.style.backgroundColor == 'blue') {
+                colorFondo.style.backgroundColor = '';
+            } else {
+                colorFondo.style.backgroundColor = 'blue';
+            };
+        });
+
+
+    </script>
+
+</body>
+
+</html>
